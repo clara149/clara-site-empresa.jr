@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projeto-final/produtos/produtos.css">
+    <title>ECODRESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+        <header>
+            <h1 id="logo"><a href="/projeto-final/index.html">ECODRESS</a></h1>
+            <nav>
+                <!-- menu de navegação --> 
+                <div class="nav__lista--container">          
+                    <ul>
+                        <li><a href="/projeto-final/index.html"> Home </a></li>
+                        <li><a href="/projeto-final/index.html"> Produtos </a></li>
+                        <li><a href="#sobre-nos"> Sobre Nós </a></li>
+                        <li><a href="#contato"> Contato </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="product-container">
+            <div class="product-imagem">
+                <img src="/projeto-final/fotos/calça-jeans-infantil.jpg" alt="calça jeans infantil">
+            </div>
+            <div class="produtos-detalhes">
+                <h1>Calça Jeans (Infantil)</h1>
+                <p class="description">A calça jeans é confeccionada com denim reciclado, proporcionando conforto e resistência para o uso diário. Seu ajuste flexível é ideal para a movimentação das crianças. Lave em água fria e evite secar em alta temperatura para manter a forma e as cores.</p>
+                <p class="price">R$ 59,90</p>
+                <div class="options">
+                    <div class="sizes">
+                        <label for="size">Tamanho:</label>
+                        <select id="size">
+                            <option value="a">4-5</option>
+                            <option value="b">6-7</option>
+                            <option value="c">8-9</option>
+                            <option value="d">9-10</option>
+                            <option value="e">11-12</option>
+                            <option value="f">13-14</option>
+                        </select>
+                    </div>
+                    <div class="colors">
+                        <label>Cores:</label>
+                        <input type="radio" id="color1" name="color" value="azul1">
+                        <label for="color1">Azul-Claro</label>
+                        <input type="radio" id="color2" name="color" value="azul2">
+                        <label for="color2">Azul-Médio</label>
+                        <input type="radio" id="color3" name="color" value="azul3">
+                        <label for="color4">Azul-Escuro</label><input type="radio" id="color5" name="color" value="preto">
+                        <label for="color2">Preto</label>
+                        <input type="radio" id="color6" name="color" value="verde">
+                        <label for="color2">Verde</label>
+                    </div>
+                </div>
+                
+                <div class="quantity">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                
+                <button class="buy-button"> <a href="/projeto-final/entrega/entrega.html">Comprar</a></button>
+            </div>
+        </div> 
+        <footer id="contato">
+            <div class="contatos-container">
+                <p>Obrigada por escolher a ECODRESS!</p>
+                <p>Entre em contato conosco:</p>
+            </div>
+            <div class="contatos">
+                <ul>
+                    <li>Telefone: 34-12345678</li>
+                    <li>e-mail:<a href="mailto:ecodress@gmail.com"> ecodress@gmail.com</a></li>
+                    <li>twitter:<a href="https://twitter.com/ecodress_"> @ecodress_</a></li>
+                    <li>instagram:<a href="https://instagram.com/ecodress"> @ecodress</a></li>
+                    <li>linkedin:<a href="https://linkedin.com/company/ecodress"> @ecodress</a></li>
+                    <li>Github:<a href="https://github.com/ecodress_"> @ecodress_</a></li>
+                </ul>
+            </div>
+            <div class="footer__texto--ultimoParagrafo">
+                <p>© 2024 ECODRESS. Todos os direitos reservados.</p>
+            </div>
+        </footer>  
+</body>
+</html>

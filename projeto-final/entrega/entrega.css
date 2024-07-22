@@ -1,0 +1,296 @@
+/* estilo para desktop */
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(169, 0, 0);
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: rgb(55, 8, 8);
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__lista--container {
+    max-width: 360px;
+    min-width: 300px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav li:hover a {
+    color: rgb(217, 83, 79);
+}
+
+.entrega-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(253, 234, 237);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.entrega {
+    flex: 1;
+}
+
+.entrega h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.entrega h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.entrega h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.entrega label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.entrega input, .entrega select {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.botao {
+    background-color: rgb(176, 1, 1);
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao:hover {
+    background-color: rgb(55, 8, 8);
+}
+
+footer {
+    background: rgb(169, 169, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contatos-container p:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.contatos-container p:last-child {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+footer li:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+.footer__texto--ultimoParagrafo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer__texto--ultimoParagrafo p {
+    font-size: 0.9rem;
+}
+
+/* estilo para tablets */
+@media screen and (max-width: 830px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header nav {
+        width: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav__lista--container {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+    nav li {
+        margin-left:15px;
+        margin-bottom: 0;
+    }
+
+    .entrega-container {
+        padding: 10px;
+    }
+
+    .entrega h1 {
+        font-size: 2rem;
+    }
+
+    .entrega h2 {
+        font-size: 1.3rem;
+    }
+
+    .entrega h3 {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer ul {
+        font-size: 0.9rem;
+    }
+}
+
+/* estilo para celulares */
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    header h1 a {
+        font-size: 2.2rem;
+    }
+    
+    header  nav {
+        background-color: rgb(169, 0, 0);
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        font-size: 0.7rem;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+        
+    }
+
+    nav li {
+        margin-bottom: 8px;
+    }
+
+    nav li:last-child {
+        margin-bottom: 8px;
+    }
+
+    .entrega-container {
+        padding: 10px;
+    }
+
+    .entrega h1 {
+        font-size: 1.8rem;
+    }
+
+    .entrega h2 {
+        font-size: 1.2rem;
+    }
+
+    .entrega h3 {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer ul {
+        font-size: 0.8rem;
+    }
+}

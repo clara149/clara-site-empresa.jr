@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projeto-final/produtos/produtos.css">
+    <title>ECODRESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+        <header>
+            <h1 id="logo"><a href="/projeto-final/index.html">ECODRESS</a></h1>
+            <nav>
+                <!-- menu de navegação --> 
+                <div class="nav__lista--container">          
+                    <ul>
+                        <li><a href="/projeto-final/ihtml"> Home </a></li>
+                        <li><a href="/projeto-final/index.html"> Produtos </a></li>
+                        <li><a href="#sobre-nos"> Sobre Nós </a></li>
+                        <li><a href="#contato"> Contato </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="product-container">
+            <div class="product-imagem">
+                <img src="/projeto-final/fotos/regata-feminina.jpg" alt="Regata Feminina">
+            </div>
+            <div class="produtos-detalhes">
+                <h1>Regata Feminina</h1>
+                <p class="description">Feita com 100% algodão orgânico, esta regata é a escolha perfeita para quem busca conforto e estilo. Seu tecido respirável e leve proporciona uma sensação agradável durante o uso. Ideal para dias quentes ou para ser usada em camadas. Cuide lavando à mão com água fria e evitando secadora para preservar a qualidade.</p>
+                <p class="price">R$ 49,90</p>
+                <div class="options">
+                    <div class="sizes">
+                        <label for="size">Tamanho:</label>
+                        <select id="size">
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="g">G</option>
+                            <option value="gg">GG</option>
+                        </select>
+                    </div>
+                    <div class="colors">
+                        <label>Cores:</label>
+                        <input type="radio" id="color1" name="color" value="preto">
+                        <label for="color1">Preto</label>
+                        <input type="radio" id="color2" name="color" value="branco">
+                        <label for="color2">Branco</label>
+                        <input type="radio" id="color3" name="color" value="azul">
+                        <label for="color3">Marrom</label>
+                        <input type="radio" id="color4" name="color" value="cinza">
+                        <label for="color3">Cinza</label>
+                        <input type="radio" id="color5" name="color" value="azul">
+                        <label for="color5">Vermelho ECODRESS</label>
+                    </div>
+                </div>
+                
+                <div class="quantity">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                
+                <button class="buy-button"> <a href="/projeto-final/entrega/entrega.html">Comprar</a></button>
+            </div>
+        </div> 
+        <footer id="contato">
+            <div class="contatos-container">
+                <p>Obrigada por escolher a ECODRESS!</p>
+                <p>Entre em contato conosco:</p>
+            </div>
+            <div class="contatos">
+                <ul>
+                    <li>Telefone: 34-12345678</li>
+                    <li>e-mail:<a href="mailto:ecodress@gmail.com"> ecodress@gmail.com</a></li>
+                    <li>twitter:<a href="https://twitter.com/ecodress_"> @ecodress_</a></li>
+                    <li>instagram:<a href="https://instagram.com/ecodress"> @ecodress</a></li>
+                    <li>linkedin:<a href="https://linkedin.com/company/ecodress"> @ecodress</a></li>
+                    <li>Github:<a href="https://github.com/ecodress_"> @ecodress_</a></li>
+                </ul>
+            </div>
+            <div class="footer__texto--ultimoParagrafo">
+                <p>© 2024 ECODRESS. Todos os direitos reservados.</p>
+            </div>
+        </footer>  
+</body>
+</html>

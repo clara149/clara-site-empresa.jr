@@ -1,0 +1,416 @@
+/* estilo para desktop */ 
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(169, 0, 0);
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: rgb(55, 8, 8);
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin:0;
+    font-size: 2.5rem;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__lista--container {
+    max-width: 360px;
+    min-width: 300px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav li:hover a {
+    color: rgb(217, 83, 79);
+}
+
+.banner-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-principal img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.banner-conteudo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    color: rgb(107, 4, 4);
+    background: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Inicia invisível */
+      transform: translate(-50%, -50%);
+    }
+    to {
+      opacity: 1; /* Termina visível */
+      transform: translate(-50%, -60%);
+    }
+}
+
+.banner-conteudo h2 {
+    font-size: 21px;
+    margin: 0;
+}
+.banner-conteudo button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: rgb(176, 1, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-conteudo button:hover {
+    background-color: rgb(107, 4, 4);
+}
+
+.banner-conteudo button a {
+    text-decoration: none;
+    color: white;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.categorias ul {
+    display: flex;
+    list-style: none;
+    margin-top: -10px;
+    margin-right: 25px;
+}
+
+.categorias li {
+    margin: 0 15px;
+}
+
+.categorias a {
+    color: rgb(107, 4, 4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.categorias a:hover {
+    text-decoration: underline;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.produtos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produtos .card {
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+    margin: 10px 0;
+}
+
+.card .descricao {
+    font-size: 0.9rem;
+    color: rgb(102, 102, 102);
+    margin: 0 10px 10px;
+}
+
+.card .preco {
+    font-size: 1.1rem;
+    color: rgb(217, 83, 79);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: rgb(176, 1, 1);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.card button:hover {
+    background-color: rgb(107, 4, 4);
+}
+
+.sobre-nos {
+    padding: 50px;
+    background-color: white;
+}
+
+.sobre-nos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(169, 0, 0);
+}
+
+.sobre-nos h3 {
+    font-size: 1.8rem;
+    color: rgb(169, 0, 0);
+}
+
+.sobre-nos p {
+    font-size: 1.2rem;
+    color: rgb(55, 8, 8);
+    line-height: 1.6;
+}
+
+.sobre-nos ul {
+    list-style-type: style type dot;
+    padding: 0;
+}
+
+.sobre-nos ul li {
+    font-size: 1.2rem;
+    color: rgb(55, 8, 8);
+    margin: 5px 0;
+}
+
+footer {
+    background: rgb(169, 169, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contatos-container p:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.contatos-container p:last-child {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+footer li:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+.footer__texto--ultimoParagrafo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer__texto--ultimoParagrafo p {
+    font-size: 0.9rem;
+}
+
+/* estilo para tablets */
+@media screen and (max-width: 830px) {
+    body {
+        background-color: whitesmoke;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header h1 a {
+        font-size: 2.8rem;
+    }
+
+    header nav {
+        width: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav__lista--container {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    nav li {
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+
+    main img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner-conteudo h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-conteudo button {
+        font-size: 1rem;
+    }
+}
+
+/* estilo para celulares */
+@media screen and (max-width: 500px) {   
+    body {
+        background-color: whitesmoke;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h1 a {
+        font-size: 2.2rem;
+    }
+
+    header nav {
+        background-color: rgb(169, 0, 0);
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        font-size: 0.7rem;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+
+    nav li {
+        margin-bottom: 8px;
+    }
+
+    nav li:last-child {
+        margin-bottom: 8px;
+    }
+
+    main img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-conteudo h2 {
+        font-size: 1.2rem;
+    }
+
+    .banner-conteudo button {
+        font-size: 0.9rem;
+    }
+}
